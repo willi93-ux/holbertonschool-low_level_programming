@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -o output_file source_file.c; ./output_file
+gcc -o 4-puts_0 -Wall -Werror -Wextra -pedantic -std=gnu89 4-puts.c && ./4-puts_0
