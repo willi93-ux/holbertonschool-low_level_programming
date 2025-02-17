@@ -3,30 +3,30 @@
 #include <stdio.h>
 
 /**
- * main - Détermine le dernier chiffre d'un nombre et affiche un message.
+ * main - Determines the last digit of a number and prints a message.
  *
- * Return: 0 (Succès)
+ * Return: 0 (Success)
  */
 int main(void)
 {
 	int n;
-	int dernier_chiffre;
+	int last_digit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	dernier_chiffre = n % 10;
+	last_digit = n % 10;
 
-	if (dernier_chiffre > 5)
+	if (last_digit > 5)
 	{
-		printf("Le dernier chiffre de %d est %d et est supérieur à 5\n", n, dernier_chiffre);
+		printf("The last digit of %d is %d and is greater than 5\n", n, last_digit);
 	}
-	else if (dernier_chiffre == 0)
+	else if (last_digit == 0)
 	{
-		printf("Le dernier chiffre de %d est %d et est 0\n", n, dernier_chiffre);
+		printf("The last digit of %d is %d and is 0\n", n, last_digit);
 	}
 	else
 	{
-		printf("Le dernier chiffre de %d est %d et est inférieur à 6 et différent de 0\n", n, dernier_chiffre);
+		printf("The last digit of %d is %d and is less than 6 and not 0\n", n, last_digit);
 	}
 
 	return (0);
