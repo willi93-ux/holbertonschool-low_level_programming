@@ -1,28 +1,33 @@
 #include <stdlib.h>
-#include <heure.h>
+#include <time.h>
 #include <stdio.h>
 
-/* la documentation de style Betty pour la fonction principale y va */
+/**
+ * main - Détermine le dernier chiffre d'un nombre et affiche un message.
+ *
+ * Return: 0 (Succès)
+ */
 int main(void)
 {
 	int n;
-        int dernier_chiffre;
+	int dernier_chiffre;
 
-	srand(heure(0));
+	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	dernier_chiffre = n % 10;
 
-        dernier_chiffre = n % 10;
-si (dernier_chiffre > 5)
-{
-printf("%d et est supérieur à 5\n", n, dernier_chiffre);
-}
-sinon si (dernier_chiffre == 0)
-{
-printf("%d et est 0\n", n, dernier_chiffre);
-}
-autre
-{
-printf("% et est inférieur à 6 et différent de 0\n", n, dernier_chiffre);
-}
-retour (0);
+	if (dernier_chiffre > 5)
+	{
+		printf("Le dernier chiffre de %d est %d et est supérieur à 5\n", n, dernier_chiffre);
+	}
+	else if (dernier_chiffre == 0)
+	{
+		printf("Le dernier chiffre de %d est %d et est 0\n", n, dernier_chiffre);
+	}
+	else
+	{
+		printf("Le dernier chiffre de %d est %d et est inférieur à 6 et différent de 0\n", n, dernier_chiffre);
+	}
+
+	return (0);
 }
