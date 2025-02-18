@@ -9,9 +9,9 @@
  * Return: Does not return anything (void)
  */
 
-int main (void)
+int main(void)
 {
-  char numbers;
+char numbers;
 for (numbers = '0'; numbers <= '9'; numbers++)
 {
 printf("%c", numbers);
