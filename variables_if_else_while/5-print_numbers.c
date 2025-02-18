@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
  *
@@ -12,7 +13,9 @@ for (numbers = '0'; numbers <= '9'; numbers++)
 {
 printf("%c", numbers);
 }
+{
 printf("\n");
+}
 return (0);
 }
 
