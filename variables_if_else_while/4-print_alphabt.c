@@ -1,23 +1,21 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
-
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
- */
-
+ *
+ * Return: 0
+ **/
 int main(void)
 {
-	char w;
-
-	for (w = 'a'; w <= 'z'; w++)
-	{
-		if (w != 'e' && w != 'q')
-		{
-			putchar(w);
-		}
-	}
-	putchar('\n');
-
-	return (0);
+  char c = 'a';
+  do
+    {
+      if (c == 'e' || c == 'q')
+	c++ ;
+      putchar(c++);
+    }while (c <= 'z');
+  putchar('\n');
+  return (0);
 }
