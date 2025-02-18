@@ -15,8 +15,10 @@ int main(void)
     for (w = 'a'; w <= 'z'; w++)
         putchar(w);
     putchar('\n');
+
     return (0);
 }
+
 
 
 
