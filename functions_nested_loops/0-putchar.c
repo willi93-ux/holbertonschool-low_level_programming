@@ -10,7 +10,7 @@
 */
 int main(void)
 {
-    char str[] = "_putchar\n";
-    write(1, str, 9);
-    return (0);
+char str[] = "_putchar\n";
+write(1, str, 9);
+return (0);
 }
