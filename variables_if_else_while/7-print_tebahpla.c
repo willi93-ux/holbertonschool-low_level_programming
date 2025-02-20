@@ -1,12 +1,11 @@
 #include <stdio.h>
 
 /**
-* main - Entry point
+*main - Entry point
+*Description: Prints the lowercase alphabet in reverse, followed by a new line.
+*The program uses putchar to print each character.
 *
-* Description: Prints the lowercase alphabet in reverse, followed by a new line.
-* The program uses putchar to print each character.
-*
-* Return: Always 0 (Success)
+*Return: Always 0 (Success)
 */
 int main(void)
 {
