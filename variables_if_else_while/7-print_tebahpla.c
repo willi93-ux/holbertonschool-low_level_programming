@@ -16,4 +16,3 @@ putchar(w);
 putchar('\n');
 return (0);
 }
-
