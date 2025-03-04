@@ -1,23 +1,37 @@
-/*
- * File: 4-print_rev.c
- * Auth: Brennan D Baraban
- */
-
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_rev - Prints a string in reverse.
- * @s: The string to be printed.
+ * print_rev - function that prints a string, in reverse
+ * followed by a new line
+ *
+ * @s: useful parameter
+ *
+ * Return: void
  */
+
 void print_rev(char *s)
 {
-	int len = 0, index;
+	int i = 0;
+/*
+ *	int i;
+ */
+	int l;
+	int j;
 
-	while (s[index++])
-		len++;
-
-	for (index = len - 1; index >= 0; index--)
-		_putchar(s[index]);
-
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	l = i - 1;
+/*
+ *	for (i = 0; s[i] != '\0'; i++)
+ *	{
+ *		l++;
+ *	}
+ */
+	for (j = l; j >= 0; j--)
+	{
+		_putchar(s[j]);
+	}
 	_putchar('\n');
 }
