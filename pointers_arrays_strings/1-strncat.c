@@ -4,6 +4,7 @@
  */
 
 #include "holberton.h"
+#include <stdio.h>
 
 /**
  * strncat - Concatenates two strings using at most
