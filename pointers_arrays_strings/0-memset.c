@@ -11,12 +11,12 @@
 
 char *_memset(char *s, char b, unsigned int n)
 {
-    // Boucle pour remplir les n premiers bytes avec la valeur b
+    
     for (unsigned int i = 0; i < n; i++)
     {
         s[i] = b;
     }
 
-    // Retourne le pointeur vers la zone mémoire s
+    
     return (s);
 }
