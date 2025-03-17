@@ -3,7 +3,7 @@
  * Auth: Brennan D Baraban
  */
 
-#include "main.h"
+#include "dog.h"
 #include <stdio.h>
 #include <stdlib.h>
 
